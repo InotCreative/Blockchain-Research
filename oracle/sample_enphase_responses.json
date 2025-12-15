@@ -1,0 +1,365 @@
+{
+  "description": "Sample Enphase API responses for SEARChain oracle testing",
+  "api_version": "v4",
+  "systems": [
+    {
+      "system_id": "1234567",
+      "name": "Residential Solar System A",
+      "capacity_kw": 8.5,
+      "location": "Austin, TX"
+    },
+    {
+      "system_id": "2345678",
+      "name": "Commercial Solar System B",
+      "capacity_kw": 25.0,
+      "location": "Denver, CO"
+    },
+    {
+      "system_id": "3456789",
+      "name": "Residential Solar System C",
+      "capacity_kw": 12.0,
+      "location": "Phoenix, AZ"
+    }
+  ],
+  "hourly_responses": [
+    {
+      "system_id": "1234567",
+      "hour_id": 482000,
+      "response": {
+        "system_id": "1234567",
+        "granularity": "day",
+        "start_at": 1735200000,
+        "end_at": 1735203600,
+        "intervals": [
+          {
+            "end_at": 1735200900,
+            "enwh": 450,
+            "devices_reporting": 24
+          },
+          {
+            "end_at": 1735201800,
+            "enwh": 520,
+            "devices_reporting": 24
+          },
+          {
+            "end_at": 1735202700,
+            "enwh": 580,
+            "devices_reporting": 24
+          },
+          {
+            "end_at": 1735203600,
+            "enwh": 610,
+            "devices_reporting": 24
+          }
+        ],
+        "meta": {
+          "status": "normal",
+          "last_report_at": 1735203600
+        }
+      },
+      "aggregated_wh": 2160
+    },
+    {
+      "system_id": "1234567",
+      "hour_id": 482001,
+      "response": {
+        "system_id": "1234567",
+        "granularity": "day",
+        "start_at": 1735203600,
+        "end_at": 1735207200,
+        "intervals": [
+          {
+            "end_at": 1735204500,
+            "enwh": 680,
+            "devices_reporting": 24
+          },
+          {
+            "end_at": 1735205400,
+            "enwh": 720,
+            "devices_reporting": 24
+          },
+          {
+            "end_at": 1735206300,
+            "enwh": 750,
+            "devices_reporting": 24
+          },
+          {
+            "end_at": 1735207200,
+            "enwh": 710,
+            "devices_reporting": 24
+          }
+        ],
+        "meta": {
+          "status": "normal",
+          "last_report_at": 1735207200
+        }
+      },
+      "aggregated_wh": 2860
+    },
+    {
+      "system_id": "1234567",
+      "hour_id": 482002,
+      "response": {
+        "system_id": "1234567",
+        "granularity": "day",
+        "start_at": 1735207200,
+        "end_at": 1735210800,
+        "intervals": [
+          {
+            "end_at": 1735208100,
+            "enwh": 620,
+            "devices_reporting": 24
+          },
+          {
+            "end_at": 1735209000,
+            "enwh": 580,
+            "devices_reporting": 24
+          },
+          {
+            "end_at": 1735209900,
+            "enwh": 490,
+            "devices_reporting": 24
+          },
+          {
+            "end_at": 1735210800,
+            "enwh": 350,
+            "devices_reporting": 24
+          }
+        ],
+        "meta": {
+          "status": "normal",
+          "last_report_at": 1735210800
+        }
+      },
+      "aggregated_wh": 2040
+    },
+    {
+      "system_id": "2345678",
+      "hour_id": 482000,
+      "response": {
+        "system_id": "2345678",
+        "granularity": "day",
+        "start_at": 1735200000,
+        "end_at": 1735203600,
+        "intervals": [
+          {
+            "end_at": 1735200900,
+            "enwh": 1250,
+            "devices_reporting": 72
+          },
+          {
+            "end_at": 1735201800,
+            "enwh": 1480,
+            "devices_reporting": 72
+          },
+          {
+            "end_at": 1735202700,
+            "enwh": 1620,
+            "devices_reporting": 72
+          },
+          {
+            "end_at": 1735203600,
+            "enwh": 1750,
+            "devices_reporting": 72
+          }
+        ],
+        "meta": {
+          "status": "normal",
+          "last_report_at": 1735203600
+        }
+      },
+      "aggregated_wh": 6100
+    },
+    {
+      "system_id": "2345678",
+      "hour_id": 482001,
+      "response": {
+        "system_id": "2345678",
+        "granularity": "day",
+        "start_at": 1735203600,
+        "end_at": 1735207200,
+        "intervals": [
+          {
+            "end_at": 1735204500,
+            "enwh": 1920,
+            "devices_reporting": 72
+          },
+          {
+            "end_at": 1735205400,
+            "enwh": 2100,
+            "devices_reporting": 72
+          },
+          {
+            "end_at": 1735206300,
+            "enwh": 2180,
+            "devices_reporting": 72
+          },
+          {
+            "end_at": 1735207200,
+            "enwh": 2050,
+            "devices_reporting": 72
+          }
+        ],
+        "meta": {
+          "status": "normal",
+          "last_report_at": 1735207200
+        }
+      },
+      "aggregated_wh": 8250
+    },
+    {
+      "system_id": "2345678",
+      "hour_id": 482002,
+      "response": {
+        "system_id": "2345678",
+        "granularity": "day",
+        "start_at": 1735207200,
+        "end_at": 1735210800,
+        "intervals": [
+          {
+            "end_at": 1735208100,
+            "enwh": 1850,
+            "devices_reporting": 72
+          },
+          {
+            "end_at": 1735209000,
+            "enwh": 1680,
+            "devices_reporting": 72
+          },
+          {
+            "end_at": 1735209900,
+            "enwh": 1420,
+            "devices_reporting": 72
+          },
+          {
+            "end_at": 1735210800,
+            "enwh": 980,
+            "devices_reporting": 72
+          }
+        ],
+        "meta": {
+          "status": "normal",
+          "last_report_at": 1735210800
+        }
+      },
+      "aggregated_wh": 5930
+    },
+    {
+      "system_id": "3456789",
+      "hour_id": 482000,
+      "response": {
+        "system_id": "3456789",
+        "granularity": "day",
+        "start_at": 1735200000,
+        "end_at": 1735203600,
+        "intervals": [
+          {
+            "end_at": 1735200900,
+            "enwh": 720,
+            "devices_reporting": 36
+          },
+          {
+            "end_at": 1735201800,
+            "enwh": 850,
+            "devices_reporting": 36
+          },
+          {
+            "end_at": 1735202700,
+            "enwh": 920,
+            "devices_reporting": 36
+          },
+          {
+            "end_at": 1735203600,
+            "enwh": 980,
+            "devices_reporting": 36
+          }
+        ],
+        "meta": {
+          "status": "normal",
+          "last_report_at": 1735203600
+        }
+      },
+      "aggregated_wh": 3470
+    },
+    {
+      "system_id": "3456789",
+      "hour_id": 482001,
+      "response": {
+        "system_id": "3456789",
+        "granularity": "day",
+        "start_at": 1735203600,
+        "end_at": 1735207200,
+        "intervals": [
+          {
+            "end_at": 1735204500,
+            "enwh": 1080,
+            "devices_reporting": 36
+          },
+          {
+            "end_at": 1735205400,
+            "enwh": 1150,
+            "devices_reporting": 36
+          },
+          {
+            "end_at": 1735206300,
+            "enwh": 1200,
+            "devices_reporting": 36
+          },
+          {
+            "end_at": 1735207200,
+            "enwh": 1120,
+            "devices_reporting": 36
+          }
+        ],
+        "meta": {
+          "status": "normal",
+          "last_report_at": 1735207200
+        }
+      },
+      "aggregated_wh": 4550
+    },
+    {
+      "system_id": "3456789",
+      "hour_id": 482002,
+      "response": {
+        "system_id": "3456789",
+        "granularity": "day",
+        "start_at": 1735207200,
+        "end_at": 1735210800,
+        "intervals": [
+          {
+            "end_at": 1735208100,
+            "enwh": 980,
+            "devices_reporting": 36
+          },
+          {
+            "end_at": 1735209000,
+            "enwh": 870,
+            "devices_reporting": 36
+          },
+          {
+            "end_at": 1735209900,
+            "enwh": 720,
+            "devices_reporting": 36
+          },
+          {
+            "end_at": 1735210800,
+            "enwh": 510,
+            "devices_reporting": 36
+          }
+        ],
+        "meta": {
+          "status": "normal",
+          "last_report_at": 1735210800
+        }
+      },
+      "aggregated_wh": 3080
+    }
+  ],
+  "notes": {
+    "hour_id_calculation": "hour_id = floor(unix_timestamp / 3600)",
+    "energy_unit": "Wh (Watt-hours)",
+    "interval_duration": "15 minutes (900 seconds)",
+    "aggregation_formula": "Sum of all interval enwh values within the hour"
+  }
+}

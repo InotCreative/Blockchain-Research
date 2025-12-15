@@ -1,0 +1,17 @@
+consumer_id,timestamp,energy_wh,location,meter_type
+METER-001,1735200000,1850,Austin TX,smart_meter
+METER-001,1735203600,2100,Austin TX,smart_meter
+METER-001,1735207200,1920,Austin TX,smart_meter
+METER-001,1735210800,1650,Austin TX,smart_meter
+METER-002,1735200000,4200,Denver CO,commercial
+METER-002,1735203600,5100,Denver CO,commercial
+METER-002,1735207200,4800,Denver CO,commercial
+METER-002,1735210800,3900,Denver CO,commercial
+METER-003,1735200000,2800,Phoenix AZ,smart_meter
+METER-003,1735203600,3200,Phoenix AZ,smart_meter
+METER-003,1735207200,2950,Phoenix AZ,smart_meter
+METER-003,1735210800,2400,Phoenix AZ,smart_meter
+METER-004,1735200000,1200,Seattle WA,smart_meter
+METER-004,1735203600,1450,Seattle WA,smart_meter
+METER-004,1735207200,1380,Seattle WA,smart_meter
+METER-004,1735210800,1100,Seattle WA,smart_meter

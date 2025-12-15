@@ -1,0 +1,92 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+artifacts/
+cache/
+typechain-types/
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+coverage.json
+.nyc_output/
+
+# Hardhat
+cache_hardhat/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+oracle/.venv/
+oracle/venv/
+oracle/env/
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+.eggs/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets and keys
+*.pem
+*.key
+private_key*
+secret*
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Deployment (keep sample, ignore real deployments)
+# deployments/addresses-*.json  # Uncomment to ignore deployment addresses
+
+# Gas reports
+gas-report.txt
+
+# Solidity coverage
+.solcover.js
