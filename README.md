@@ -315,6 +315,32 @@ The system supports measurement of:
 - Latency from hour end to finalized mint
 - Scaling with 10-500 producers and 5-15 verifiers
 
+### Benchmark Results
+
+Run the baseline comparison tests to get research metrics:
+
+```bash
+npx hardhat test test/baseline.test.ts
+```
+
+#### Sample Results (5 kWh verification, 3 verifiers, 66.67% quorum)
+
+| Metric | Baseline Mode | Decentralized Mode |
+|--------|--------------|-------------------|
+| Total Gas | ~548,000 | ~927,000 |
+| Gas per kWh | ~110,000 | ~185,000 |
+| Overhead | - | +69% |
+| Finalization Latency | Immediate | ~1 hour (claim window) |
+
+#### Research Questions Addressed
+
+1. **RQ1**: Protocol-layer PoS verification works without L1 consensus changes ✅
+2. **RQ2**: 66.67% quorum provides good balance of security vs. gas cost
+3. **RQ3**: Hourly granularity adds ~24x overhead vs daily (24 claims vs 1)
+4. **RQ4**: Gas scales linearly with verifier count (~110k per verifier submission)
+5. **RQ5**: Decentralized mode adds 54-69% gas overhead vs baseline
+6. **RQ6**: Full provenance reconstruction via claimKeys + evidenceRoots ✅
+
 ### Baseline Comparison Mode
 
 Enable baseline mode for research comparison:
@@ -327,6 +353,21 @@ productionOracle.setSingleVerifierOverride(verifierAddress);
 // No slashing mode
 treasury.setDisableSlashing(true);
 ```
+
+### Adversarial Testing
+
+Run adversarial tests to verify security under attack:
+
+```bash
+npx hardhat test test/adversarial.test.ts
+```
+
+Tests include:
+- 20% malicious verifiers (quorum still works)
+- 40% malicious verifiers (disputed state)
+- Replay attacks (rejected)
+- Double-match attacks (rejected)
+- Signature forgery (rejected)
 
 ## License
 
