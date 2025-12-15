@@ -16,12 +16,12 @@ Energy production is verified through the Enphase API by a set of staked verifie
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                        On-Chain (EVM)                           │
-├─────────────┬─────────────┬─────────────┬─────────────────────┤
-│  SEARToken  │HourlyCredits│  Registry   │      Treasury       │
-│  (ERC-20)   │ (ERC-1155)  │             │                     │
-├─────────────┴─────────────┴─────────────┴─────────────────────┤
+├─────────────┬─────────────┬─────────────┬───────────────────────┤
+│  SEARToken  │HourlyCredits│  Registry   │      Treasury         │
+│  (ERC-20)   │ (ERC-1155)  │             │                       │
+├─────────────┴─────────────┴─────────────┴───────────────────────┤
 │  ProductionOracle  │  ConsumptionOracle  │  Matcher  │Retirement│
-└────────────────────┴─────────────────────┴───────────┴─────────┘
+└────────────────────┴─────────────────────┴───────────┴──────────┘
                               ▲
                               │
 ┌─────────────────────────────┴───────────────────────────────────┐
@@ -78,16 +78,16 @@ pip install -r requirements.txt
 
 ### Contract Overview
 
-| Contract | Description |
-|----------|-------------|
-| `SEARToken` | ERC-20 token for staking, rewards, and payments |
-| `HourlyCredits` | ERC-1155 tokens representing verified hourly energy production |
-| `Registry` | Manages producers, consumers, and verifier membership |
-| `Treasury` | Handles reward distribution and slashing |
-| `ProductionOracle` | Verifier consensus for production claims |
-| `ConsumptionOracle` | Verifier consensus for consumption claims |
-| `Matcher` | 24/7 hourly matching between production and consumption |
-| `Retirement` | Credit retirement and SREC certificate issuance |
+| Contract            | Description                                                    |
+|---------------------|----------------------------------------------------------------|
+| `SEARToken`         | ERC-20 token for staking, rewards, and payments                |
+| `HourlyCredits`     | ERC-1155 tokens representing verified hourly energy production |
+| `Registry`          | Manages producers, consumers, and verifier membership          |
+| `Treasury`          | Handles reward distribution and slashing                       |
+| `ProductionOracle`  | Verifier consensus for production claims                       |
+| `ConsumptionOracle` | Verifier consensus for consumption claims                      |
+| `Matcher`           | 24/7 hourly matching between production and consumption        |
+| `Retirement`        | Credit retirement and SREC certificate issuance                |
 
 ### Compile Contracts
 
@@ -144,14 +144,14 @@ Deployed addresses are saved to `deployments/addresses-<chainId>.json`:
 
 ### Default Configuration
 
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| `quorumBps` | 6667 | 66.67% quorum threshold |
-| `claimWindow` | 3600 | 1 hour claim window |
-| `rewardPerWhWei` | 1e12 | Reward per Wh in wei |
-| `slashBps` | 1000 | 10% slash percentage |
-| `faultThreshold` | 3 | Faults before slashing |
-| `minStake` | 100 SEAR | Minimum verifier stake |
+| Parameter        | Value    | Description             |
+|------------------|----------|-------------------------|
+| `quorumBps`      | 6667     | 66.67% quorum threshold |
+| `claimWindow`    | 3600     | 1 hour claim window     |
+| `rewardPerWhWei` | 1e12     | Reward per Wh in wei    |
+| `slashBps`       | 1000     | 10% slash percentage    |
+| `faultThreshold` | 3        | Faults before slashing  |
+| `minStake`       | 100 SEAR | Minimum verifier stake  |
 
 ## Oracle Service Configuration
 
